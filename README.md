@@ -19,7 +19,7 @@ gb借助node的强大能力,来实现命令行中为git的分支来添加注释.
 ## Install
 
 ```shell
-npm install gb -g
+npm install gb-info -g
 ```
 
 ## Usage

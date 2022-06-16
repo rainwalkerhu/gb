@@ -1,5 +1,5 @@
 {
-  "name": "gb",
+  "name": "gb-info",
   "version": "1.0.0",
   "description": "给git分支加注释,解决分支过多无法分辨各个分支的作用的问题",
   "main": "index.js",
