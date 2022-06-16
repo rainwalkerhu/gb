@@ -1,7 +1,7 @@
 {
-  "name": "branchinfo",
-  "version": "1.0.4",
-  "description": "Give each git branch a note, to clearly record the role of each branch.",
+  "name": "gb",
+  "version": "1.0.0",
+  "description": "给git分支加注释,解决分支过多无法分辨各个分支的作用的问题",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,24 +9,25 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jiang-Xuan/gb.git"
+    "url": "git+https://github.com/rainwalkerhu/gb.git"
   },
   "bin": {
-    "gb": "index.es5.js"
+    "gb": "index.js"
   },
   "keywords": [
     "git",
     "branch",
     "info"
   ],
-  "author": "Jiang-Xuan",
+  "author": "rainwalkerhu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jiang-Xuan/gb/issues"
+    "url": "https://github.com/rainwalkerhu/gb/issues"
   },
-  "homepage": "https://github.com/Jiang-Xuan/gb#readme",
+  "homepage": "https://github.com/rainwalkerhu/gb#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "yargs-parser": "^21.0.1"
   }
 }

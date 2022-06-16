@@ -1,6 +1,5 @@
-# branchinfo
+# gb
 
-> Give git branch notes. Because much git branch make me so difficult to understand.
 > 给git分支加注释,解决分支过多无法分辨各个分支的作用的问题
 
 ## Intro
@@ -11,7 +10,7 @@
 
 这个时候需要来一个命令行工具来帮助分辨某一个分支到底是做什么的.
 
-branchinfo借助node的强大能力,来实现命令行中为git的分支来添加注释.
+gb借助node的强大能力,来实现命令行中为git的分支来添加注释.
 
 如果你还没有安装node,请访问<https://nodejs.org/en/>
 
@@ -20,7 +19,7 @@ branchinfo借助node的强大能力,来实现命令行中为git的分支来添�
 ## Install
 
 ```shell
-npm install branchinfo -g
+npm install gb -g
 ```
 
 ## Usage
@@ -53,3 +52,5 @@ npm install branchinfo -g
     * master - 主分支
 
 分支的注释会被加粗显示,当前处于的分支的注释会被加下划线.
+
+在命令行中键入`gb --note`,然后回车，脚本会遍历`.gitbranch`文件，执行命令`git config branch.分支名.description ‘分支描述信息’`，然后你可以通过`git config branch.分支名.description` 查看到你的注释，此时注释会被添加到git分支上
