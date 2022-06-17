@@ -4,14 +4,19 @@
 const yArgsParser = require("yargs-parser");
 const child_process = require("child_process");
 const { branchs } = require("./lib/read_gitbranch");
+const { init_gitbranch } = require("./lib/init_gitbranch");
 const colors = require("colors");
 const spawn = child_process.spawn;
 const Promise = global.Promise || require("bluebird");
 const args = yArgsParser(process.argv.slice(2));
-console.log('-----', args, args.note)
+
 let gitBranch = spawn("git", ["branch"]);
 let output = "";
 let nativeBranch = /^(?:  |\n*\* |\n) {0,2}(.*)(?=\n|$)/;
+
+if (args.init) {
+  init_gitbranch()
+}
 
 new Promise((resolve, reject) => {
   let branchString = "";
